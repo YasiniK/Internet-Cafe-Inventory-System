@@ -1,1 +1,1 @@
-# Internet-Cafe-Inventory-System
+## OneNetCafe application using java and javafx
