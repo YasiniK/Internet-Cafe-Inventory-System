@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="510.0" style="-fx-background-color: #de7e23;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorysystem.AddItemController">
+   <Label layoutX="192.0" layoutY="23.0" prefHeight="32.0" prefWidth="129.0" text="Add Items" textFill="#143040">
+      <font>
+         <Font name="Arial Black" size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="38.0" layoutY="81.0" prefHeight="25.0" prefWidth="80.0" text="Item Code: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+   </Label>
+   <Label layoutX="38.0" layoutY="121.0" prefHeight="16.0" prefWidth="80.0" text="Item Name: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+   </Label>
+   <Label layoutX="39.0" layoutY="160.0" text="Item Brand: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+   </Label>
+   <Label layoutX="38.0" layoutY="199.0" prefHeight="20.0" prefWidth="80.0" text="Item Price: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+   </Label>
+   <Label layoutX="38.0" layoutY="238.0" prefHeight="20.0" prefWidth="80.0" text="Quantity: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+   </Label>
+   <Label layoutX="38.0" layoutY="279.0" prefHeight="16.0" prefWidth="71.0" text="Category: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+   </Label>
+   <Label layoutX="39.0" layoutY="318.0" text="Purchased Date: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </Label>
+   <Label layoutX="38.0" layoutY="358.0" text="Item Image: ">
+      <font>
+         <Font name="Segoe UI Semibold" size="14.0" />
+      </font>
+      <effect>
+         <Bloom />
+      </effect>
+   </Label>
+   <TextField fx:id="itemCodeField" layoutX="153.0" layoutY="81.0" prefHeight="25.0" prefWidth="306.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+   <TextField fx:id="itemNameField" layoutX="153.0" layoutY="118.0" prefHeight="25.0" prefWidth="306.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+   <TextField fx:id="itemBrandField" layoutX="153.0" layoutY="157.0" prefHeight="25.0" prefWidth="306.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+   <TextField fx:id="priceField" layoutX="153.0" layoutY="196.0" prefHeight="25.0" prefWidth="306.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>1200
+   <TextField fx:id="quantityField" layoutX="153.0" layoutY="235.0" prefHeight="25.0" prefWidth="306.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+   <TextField fx:id="categoryField" layoutX="153.0" layoutY="276.0" prefHeight="25.0" prefWidth="306.0">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor></TextField>
+   <DatePicker fx:id="purchasedDateField" layoutX="153.0" layoutY="315.0" prefHeight="25.0" prefWidth="172.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></DatePicker>
+   <Button fx:id="AddButton" layoutX="199.0" layoutY="542.0" mnemonicParsing="false" onAction="#AddItemClick" prefHeight="34.0" prefWidth="109.0" style="-fx-background-color: #de7e23;" text="Add Item" textFill="#140d0d">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="10.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <graphic>
+         <FontIcon iconLiteral="fas-folder-plus" iconSize="30" />
+      </graphic>
+   </Button>
+   <Button fx:id="HomeButton" layoutX="34.0" layoutY="530.0" mnemonicParsing="false" onAction="#HomeButtonClick" style="-fx-background-color: #de7e23;">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="19.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <graphic>
+         <FontIcon iconLiteral="fas-home" iconSize="40" />
+      </graphic>
+   </Button>
+   <ImageView fx:id="ImageView" fitHeight="150.0" fitWidth="228.0" layoutX="160.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true" />
+   <Button fx:id="UploadImageButton" layoutX="188.0" layoutY="483.0" mnemonicParsing="false" onAction="#onUploadImageClicked" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #ffffff;" text="Upload a Image">
+      <font>
+         <Font name="Segoe UI Symbol" size="12.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="SaveItemButton" layoutX="353.0" layoutY="542.0" mnemonicParsing="false" onAction="#SaveItemButtonClick" prefHeight="34.0" prefWidth="109.0" style="-fx-background-color: #de7e23;" text="Save Item" textFill="#140d0d">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="10.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <graphic>
+         <FontIcon iconLiteral="fas-save" iconSize="30" />
+      </graphic>
+   </Button>
+</AnchorPane>
