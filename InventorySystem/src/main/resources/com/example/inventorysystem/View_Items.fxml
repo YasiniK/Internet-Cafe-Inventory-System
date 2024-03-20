@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="691.0" style="-fx-background-color: #de7e23;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inventorysystem.ViewItemsController">
+   <TableView fx:id="tableView" layoutX="6.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="740.0" style="-fx-background-color: #ffffff;">
+      <columns>
+         <TableColumn fx:id="itemCodeColumn" prefWidth="63.0" text="Item Code" />
+         <TableColumn fx:id="itemNameColumn" prefWidth="94.0" text="Item Name" />
+         <TableColumn fx:id="itemBrandColumn" prefWidth="103.0" text="Item Brand" />
+         <TableColumn fx:id="itemPriceColumn" prefWidth="67.0" text="Item Price" />
+         <TableColumn fx:id="quantityColumn" prefWidth="61.0" text="Quantity" />
+         <TableColumn fx:id="categoryColumn" prefWidth="90.0" text="Category" />
+         <TableColumn fx:id="purchasedDateColumn" prefWidth="101.0" text="Purchased Date" />
+         <TableColumn fx:id="itemImageColumn" prefWidth="160.0" text="Image" />
+      </columns>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </TableView>
+   <Button fx:id="HomeButton" layoutX="18.0" layoutY="435.0" mnemonicParsing="false" onAction="#HomeButtonClick" style="-fx-background-color: #de7e23;">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="19.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <graphic>
+         <FontIcon iconLiteral="fas-home" iconSize="40" />
+      </graphic>
+   </Button>
+   <Label layoutX="252.0" layoutY="12.0" prefHeight="32.0" prefWidth="251.0" text="Jhon’s Internet Café" textFill="#143040">
+      <font>
+         <Font name="Arial Black" size="22.0" />
+      </font>
+   </Label>
+   <Button fx:id="DeleteButton" layoutX="629.0" layoutY="451.0" mnemonicParsing="false" onAction="#DeleteItemClick" prefHeight="34.0" prefWidth="109.0" style="-fx-background-color: #de7e23;" text="Delete Item" textFill="#140d0d">
+      <font>
+         <Font name="Arial Rounded MT Bold" size="10.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <graphic>
+         <FontIcon iconLiteral="far-trash-alt" iconSize="30" />
+      </graphic>
+   </Button>
+   <Button fx:id="selectButton" layoutX="306.0" layoutY="451.0" mnemonicParsing="false" onAction="#selectButtonClick" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: #de7e23;" text="Select to update" textFill="#140d0d">
+      <graphic>
+         <FontIcon iconLiteral="fas-cog" iconSize="30" />
+      </graphic>
+      <font>
+         <Font name="Arial Rounded MT Bold" size="10.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+</AnchorPane>
