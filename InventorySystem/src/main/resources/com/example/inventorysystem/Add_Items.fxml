@@ -99,7 +99,7 @@
    <TextField fx:id="priceField" layoutX="153.0" layoutY="196.0" prefHeight="25.0" prefWidth="306.0">
       <cursor>
          <Cursor fx:constant="TEXT" />
-      </cursor></TextField>1200
+      </cursor></TextField>
    <TextField fx:id="quantityField" layoutX="153.0" layoutY="235.0" prefHeight="25.0" prefWidth="306.0">
       <cursor>
          <Cursor fx:constant="TEXT" />
