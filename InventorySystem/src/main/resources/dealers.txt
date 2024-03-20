@@ -1,0 +1,6 @@
+Akash,Seeduwa,0717720487,VGA,Asus,15,150000,Monitor,LG,1,5000,Wifi_router,SLT,15,95000
+Hirusha,Negombo,0713287651,VGA,AMD,5,80000,Monitor,Acer,2,10000,Wifi_router,ASUS,8,8000
+Kavindi,Kandy,0715062945,VGA,Asus,2,50000,Monitor,BenQ,3,15000,Wifi_router,D-Link,2,3500
+Jagath,Colombo,0716873942,VGA,MSI,10,120000,Monitor,AOC,4,20000,Wifi_router,Linksys,10,9500
+Kumara,Ragama,0712459076,VGA,Asus,6,100000,Monitor,MSI,5,25000,Wifi_router,Netgear,20,100000
+Sahan,Wattala,0711358047,VGA,Gigabyte,10,120000,Monitor,MSI,6,30000,Wifi_router,Netgear,13,80000
